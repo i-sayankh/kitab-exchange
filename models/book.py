@@ -32,6 +32,11 @@ class BookRead(SQLModel):
     user_id: int
 
 
+class BookUpdate(SQLModel):
+    price: Optional[float] = None
+    is_sold: Optional[bool] = None
+
+
 # avoid circular import
 from models.user import User
 
